@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Pokemon</title>
-    <link rel="stylesheet" href="/src/styes/reset.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+  </head>
+  <body>
     <h1>Search Pokemon</h1>
     <form id="pokemon-form">
-        <label for="">Pokemon Name:</label>
-        <input type="text" id="pokemon-name" placeholder="write the name of the pokemon" required>
-        <button type="submit">search</button>
+      <label for="pokemon-name">Pokemon Name</label>
+      <input
+        type="text"
+        id="pokemon-name"
+        placeholder="write the name of the pokemon"
+        required
+      />
+      <button type="submit">search</button>
     </form>
-</body>
+    <div id="pokemon-info"></div>
+    <script src="/src/scripts/search-form.js"></script>
+  </body>
 </html>
