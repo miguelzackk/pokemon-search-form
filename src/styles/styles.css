@@ -4,6 +4,7 @@ body {
     background: linear-gradient(0deg, rgba(187,13,13,1) 7%, rgba(31,19,19,1) 97%);
     font-family: 'Pokemon Solid', sans-serif;
     padding: 15px;
+    letter-spacing: 9px;
 }
 
 main {
@@ -19,6 +20,16 @@ main img {
 }
 
 main h1 {
-    color: white;
-    letter-spacing: 5px;
+    color: rgb(252, 235, 0);
+    font-size: 300%;
+    text-shadow: 1px 1px 25px blue, 1px 1px 10px blue;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
