@@ -1,35 +1,60 @@
 body {
-    height: 100vh; 
-    background: rgb(187,13,13);
-    background: linear-gradient(0deg, rgba(187,13,13,1) 7%, rgba(31,19,19,1) 97%);
-    font-family: 'Pokemon Solid', sans-serif;
-    padding: 15px;
-    letter-spacing: 9px;
+  height: 100vh;
+  background: rgb(187, 13, 13);
+  background: linear-gradient(
+    0deg,
+    rgba(187, 13, 13, 1) 7%,
+    rgba(31, 19, 19, 1) 97%
+  );
+  font-family: "Pokemon Solid", sans-serif;
+  padding: 15px;
+  letter-spacing: 9px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main img {
-    width: 25%;
-    height: auto;
+  width: 25%;
+  height: auto;
 }
 
 main h1 {
-    color: rgb(252, 235, 0);
-    font-size: 300%;
-    text-shadow: 1px 1px 25px blue, 1px 1px 10px blue;
+  color: rgb(252, 235, 0);
+  font-size: 300%;
+  text-shadow: 1px 1px 25px blue, 1px 1px 10px blue;
 }
 
 form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input {
+  width: 60%;
+  height: 50px;
+  border-radius: 7px;
+  padding: 0.3%;
+  font-family: "Pokemon Solid", sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+
+button {
+  width: 3%;
+  padding: 3px;
+  height: 50px;
+  border-radius: 7px;
+}
+
+.lupa {
+  width: 65%;
 }
