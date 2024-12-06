@@ -1,0 +1,23 @@
+body {
+    height: 100vh; 
+    background: rgb(187,13,13);
+    background: linear-gradient(0deg, rgba(187,13,13,1) 7%, rgba(31,19,19,1) 97%);
+    font-family: 'Pokemon Solid', sans-serif;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main img {
+    width: 25%;
+    height: auto;
+}
+
+main h1 {
+    color: white;
+}

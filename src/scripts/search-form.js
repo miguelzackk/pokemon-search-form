@@ -1,4 +1,5 @@
 const form = document.getElementById("pokemon-form");
+const openPokedexBtn = document.getElementById("open-pokedex");
 const input = document.getElementById("pokemon-name");
 const infoContainer = document.getElementById("pokemon-info");
 
