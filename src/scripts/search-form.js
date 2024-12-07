@@ -36,7 +36,7 @@ const renderPokemon = async (pokemon) => {
       <h6>Types: ${data.types.map((type) => type.type.name).join(", ")}.</h6>
     `;
 
-    const sprite = data.sprites?.other?.["official-artwork"]?.["front_default"];
+    const sprite = data.sprites.front_default;
     if (sprite) {
       pokemonImageElement.src = sprite;
       pokemonImageElement.style.display = "block";
