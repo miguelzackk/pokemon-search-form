@@ -136,12 +136,107 @@ footer {
 }
 
 footer img {
-  width: 100px;
+  width: 5%;
 }
 
 .text-footer {
   display: flex;
   font-size: 150%;
   letter-spacing: 3px;
-  gap: 4px;
+  gap: 16px;
+}
+
+@media (min-height: 1365px) {
+  .icon-pokedex {
+    top: -1.5%;
+  }
+  footer {
+    margin-top: 47%;
+  }
+}
+
+@media (max-width: 913px) {
+  footer {
+    margin-top: 52.4%;
+  }
+}
+
+@media (max-width: 854px) {
+  footer {
+    margin-top: 47.1%;
+  }
+}
+
+@media (max-width: 821px) {
+  footer {
+    margin-top: 36.1%;
+  }
+}
+
+@media (max-width: 769px){
+  footer {
+    margin-top: 18.7%;
+  }
+}
+
+@media (max-width: 500px) {
+  .icon-pokedex {
+    width: 70%;
+    top: 1%;
+    left: 14%;
+  }
+
+  footer {
+    margin-top: 26.3%;
+  }
+
+  .text-footer {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 431px) {
+  footer {
+    margin-top: 27%;
+  }
+}
+
+@media (max-width: 413px) {
+  footer {
+    margin-top: 32%;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    margin-top: 65.8%;
+  }
+
+  .text-footer {
+    font-size: 84%;
+  }
+
+  @media (max-width: 390px) {
+    footer {
+      margin-top: 27%;
+    }
+  }
+
+  @media (max-width: 376px) {
+    footer {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 361px) {
+    footer {
+      margin-top: 16%;
+    }
+  }
+
+  @media (max-width: 345px) {
+    footer {
+      margin-top: 66%;
+    }
+  }
 }
