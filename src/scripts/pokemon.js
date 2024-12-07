@@ -25,14 +25,15 @@ const renderPokemon = async (pokemon) => {
   specsElement.innerHTML = "";
   pokemonImageElement.style.display = "none";
 
+
   const data = await fetchPokemonData(pokemon);
 
   if (data) {
     pokemonNameElement.innerText = data.name;
     pokemonInfoElement.innerHTML = `<span>${data.id} -</span> <span class="pokemon-name">${data.name}</span>`;
     specsElement.innerHTML = `
-      <h6>Height: ${(data.height / 10).toFixed(1)}m.</h6>
-      <h6>Weight: ${(data.weight / 10).toFixed(1)}kg.</h6>
+      <h6>Height: ${(data.height / 10).toFixed(1)}m</h6>
+      <h6>Weight: ${(data.weight / 10).toFixed(1)}kg</h6>
       <h6>Types: ${data.types.map((type) => type.type.name).join(", ")}</h6>
     `;
 
