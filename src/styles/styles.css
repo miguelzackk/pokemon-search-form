@@ -7,8 +7,10 @@ body {
     rgba(31, 19, 19, 1) 97%
   );
   font-family: "Pokemon Solid", sans-serif;
-  padding: 15px;
   letter-spacing: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main {
@@ -16,6 +18,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 main img {
@@ -57,4 +60,73 @@ button {
 
 .lupa {
   width: 65%;
+}
+
+.card {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/src/assets/images/background-card.jpg);
+  background-size: 350px 500px;
+  width: 350px;
+  height: 500px;
+  box-shadow: 0 20px 30px black;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 20px 30px black;
+  border-radius: 15px;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.text-card h2 {
+  font-size: 200%;
+  height: 75px;
+  letter-spacing: 4px;
+  color: #f5db13;
+  font-weight: bold;
+  text-shadow: 1px 1px 25px black, 1px 1px 10px black;
+}
+
+.text-card p {
+  height: 45px;
+  font-size: 120%;
+  letter-spacing: 5px;
+  color: black;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+footer img {
+  width: 100px;
+}
+
+.text-footer {
+  display: flex;
+  font-size: 150%;
+  letter-spacing: 3px;
+  gap: 4px;
 }

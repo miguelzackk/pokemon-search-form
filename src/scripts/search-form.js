@@ -19,16 +19,18 @@ async function getPokemon(event) {
     const pokemon = await response.json();
 
     infoContainer.innerHTML = `
-            <div class="card">
-            <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-            <h2>${pokemon.name}</h2>
-            <p><strong>Height:</strong>${pokemon.height / 10} m</p>
-            <p><strong>Weight:</strong>${pokemon.weight / 10} kg</p>
-            <p><strong>Tipos:</strong>${pokemon.types
-              .map((type) => type.type.name)
-              .join(", ")}</p>
-            </div>
-        `;
+    <div class="card">
+      <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+      <div class="text-card">
+        <h2>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
+        <p><strong>Height:</strong>${pokemon.height / 10}m.</p>
+        <p><strong>Weight:</strong>${pokemon.weight / 10}kg.</p>
+        <p><strong>Types:</strong>${pokemon.types
+          .map((type) => type.type.name)
+          .join(", ")}.</p>
+      </div>
+    </div>
+  `;
   } catch (error) {
     console.error("Error", error);
 
