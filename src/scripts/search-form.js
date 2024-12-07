@@ -33,7 +33,7 @@ const renderPokemon = async (pokemon) => {
     specsElement.innerHTML = `
       <h6>Height: ${(data.height / 10).toFixed(1)}m.</h6>
       <h6>Weight: ${(data.weight / 10).toFixed(1)}kg.</h6>
-      <h6>Types: ${data.types.map((type) => type.type.name).join(", ")}</h6>
+      <h6>Types: ${data.types.map((type) => type.type.name).join(", ")}.</h6>
     `;
 
     const sprite = data.sprites?.other?.["official-artwork"]?.["front_default"];

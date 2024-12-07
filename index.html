@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Search</title>
     <link rel="stylesheet" href="/src/styles/reset.css" />
-    <link rel="stylesheet" href="/src/styles/pokedex.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
     <link
       href="https://fonts.cdnfonts.com/css/pokemon-solid"
       rel="stylesheet"
@@ -13,36 +13,40 @@
   </head>
   <body>
     <main>
-      <img src="/src/assets/images/pokedex-font.png" alt="Ícone Pokedex" class="icon-pokedex"/>
-      <div class="pokedex-geral">
-      <img src="/src/assets/images/pokedex.png" alt="pokedex" class="pokedex" />
       <img
-        src=""
-        alt="pokémon"
-        class="pokemon"
+        src="/src/assets/images/pokedex-font.png"
+        alt="Ícone Pokedex"
+        class="icon-pokedex"
       />
-      <h1 class="poke-info">
-        <span></span>
-        <span class="pokemon-name"></span>
-      </h1>
-      <div class="specs">
-        <h6></h6>
-        <h6></h6>
-        <h6></h6>
-      </div>
-      <form id="pokemon-form" class="pokemon-form">
-        <input
-          type="text"
-          id="pokemon-name"
-          class="case-pokemon"
-          placeholder="Name or number..."
-          required
+      <div class="pokedex-geral">
+        <img
+          src="/src/assets/images/pokedex.png"
+          alt="pokedex"
+          class="pokedex"
         />
-        <button type="submit" class="button-sub">
-          <img class="lupa" src="/src/assets/images/lupa.svg" alt="" />
-        </button>
-      </form>
-    </div>
+        <img src="" alt="pokémon" class="pokemon" />
+        <h1 class="poke-info">
+          <span></span>
+          <span class="pokemon-name"></span>
+        </h1>
+        <div class="specs">
+          <h6></h6>
+          <h6></h6>
+          <h6></h6>
+        </div>
+        <form id="pokemon-form" class="pokemon-form">
+          <input
+            type="text"
+            id="pokemon-name"
+            class="case-pokemon"
+            placeholder="Name or number..."
+            required
+          />
+          <button type="submit" class="button-sub">
+            <img class="lupa" src="/src/assets/images/lupa.svg" alt="" />
+          </button>
+        </form>
+      </div>
     </main>
     <footer>
       <img
@@ -54,6 +58,6 @@
         <a href="https://github.com/miguelzackk"> Miguel Zack</a>
       </div>
     </footer>
-    <script src="/src/scripts/pokemon.js"></script>
+    <script src="/src/scripts/search-form.js"></script>
   </body>
 </html>
